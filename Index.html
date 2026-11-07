@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Para Byron ❤️</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 45px 20px;
+  color: #493522;
+  background:
+    radial-gradient(ellipse at center, #9b7954 0%, #57412f 100%);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Decoración del fondo */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: .15;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+}
+
+h1 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: normal;
+  color: #f4e5c9;
+  letter-spacing: 2px;
+  margin: 0 0 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #e1c9a6;
+  font-style: italic;
+  margin-bottom: 45px;
+}
+
+/* Álbum de fotografías */
+.album {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  justify-items: center;
+  margin-bottom: 45px;
+}
+
+.frame {
+  width: 100%;
+  max-width: 260px;
+  padding: 10px 10px 38px;
+  background: linear-gradient(135deg, #a77b43, #593b20, #b28a50);
+  border: 5px solid #5b3d22;
+  box-shadow:
+    0 9px 18px #24170f99,
+    inset 0 0 0 2px #d3b47c;
+  transform: rotate(-2deg);
+  position: relative;
+}
+
+.frame:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+.frame img {
+  display: block;
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  border: 3px solid #e6d3af;
+  background: #d3c0a0;
+}
+
+.frame-number {
+  position: absolute;
+  bottom: 9px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 15px;
+  color: #f3dfb8;
+  letter-spacing: 2px;
+}
+
+/* Carta antigua */
+.letter {
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 55px 65px;
+  background:
+    linear-gradient(100deg, #e9d7b5, #f5e9d0 48%, #e6d2ad);
+  border: 1px solid #b89a6c;
+  outline: 5px double #a88a5e;
+  box-shadow: 0 18px 45px #1c100b99;
+  position: relative;
+}
+
+.letter::before {
+  content: "❦";
+  display: block;
+  text-align: center;
+  color: #9b7950;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.letter h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.letter .dedication {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 35px;
+  color: #806343;
+}
+
+.letter p {
+  font-size: 17px;
+  line-height: 1.9;
+  text-align: justify;
+  margin: 0 0 19px;
+}
+
+.signature {
+  text-align: right !important;
+  font-style: italic;
+  margin-top: 35px !important;
+}
+
+.footer {
+  text-align: center;
+  color: #e5cfaa;
+  margin-top: 40px;
+  font-style: italic;
+}
+
+/* Móvil */
+@media (max-width: 650px) {
+  body { padding: 30px 13px; }
+
+  .album {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .frame {
+    padding: 7px 7px 32px;
+    border-width: 3px;
+  }
+
+  .frame img { height: 115px; }
+
+  .letter {
+    padding: 32px 23px;
+  }
+
+  .letter p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  h1 { font-size: 30px; }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Para Byron ❤️🐾</h1>
+<div class="subtitle">Un álbum de recuerdos que nunca se borrarán</div>
+
+<!-- FOTOGRAFÍAS: los números corresponden a los archivos de la carpeta fotos -->
+<div class="album" id="album"></div>
+
+<article class="letter">
+
+<h2>Mi querido Byron:</h2>
+<div class="dedication">De tu compañero de toda la vida.</div>
+
+<p>Desde que nací estuviste a mi lado. Siempre me protegiste y fuiste uno de mis seres favoritos en todo el mundo.</p>
+
+<p>Siempre estuviste ahí para mí. Cuando te portabas mal y te dejaban fuera, yo sufría muchísimo por ti. Sé que querías pasar más tiempo conmigo y que por eso intentabas entrar. Me dolía verte fuera porque yo lo único que quería era estar contigo.</p>
+
+<p>También recuerdo cuando íbamos a coger trufas. Sentía que intentabas enseñarme, como si quisieras dejarme aprender todo lo que sabías. A veces pienso que querías enseñarme tantas cosas porque algún día ya no estarías para hacerlo.</p>
+
+<p>Nunca olvidaré nuestros juegos. Me encantaba tirarte piedras y palos para que fueras corriendo a buscarlos. Nos metíamos en el río, nos tumbábamos en la hierba y dormíamos casi juntos.</p>
+
+<p>Eras buenísimo, Byron. Eras un hermano para mí y eras superprotector. No dejabas que nadie me hiciera daño. Incluso cuando ya casi no podías moverte, seguías intentando defenderme. Parecía que habrías dado todo por protegerme.</p>
+
+<p>Tampoco te importaba que pasara tiempo con Aruk o con otros perros. Tenías tu propio lugar en mi vida y siempre serás uno de los mejores regalos que he tenido.</p>
+
+<p>Me acuerdo de cómo te acercabas con una piedra o cualquier cosa en la boca, y de aquellas veces en las que te ponías delante del coche y corrías. ¡Cuánto daría por volver a verte así!</p>
+
+<p>Pero hay algo que necesito decirte y que llevo muchísimo tiempo guardando dentro de mí.</p>
+
+<p><strong>Perdóname, Byron.</strong></p>
+
+<p>Te pido perdón porque siento que no estuve a tu lado durante aquellos últimos años como tú te merecías.</p>
+
+<p>Pasaste de correr por campos enteros a no poder moverte de una pequeña habitación, y yo muchas veces iba a verte sin dejar el móvil. No pasaba contigo todo el tiempo que podría haber pasado.</p>
+
+<p>Ahora daría cualquier cosa por repetir aquellas tardes. Por dejar el móvil, jugar contigo, acariciarte y simplemente estar a tu lado.</p>
+
+<p>Lo siento muchísimo. Te quería y te quiero más de lo que puedo explicar. Me duele pensar que no estuve lo suficiente contigo.</p>
+
+<p>A veces he llegado a pensar que estabas enfadado conmigo, pero quiero creer que conocías mi corazón y que sabías cuánto te quería. Para mí éramos como hermanos.</p>
+
+<p>Y llegó aquel día que todavía me cuesta aceptar.</p>
+
+<p>Llegó el momento en el que ya no podías más, estabas sufriendo y la familia tuvo que tomar la decisión de dejarte descansar.</p>
+
+<p>Yo no estuve allí. Ni siquiera me lo contaron hasta días después.</p>
+
+<p>Me duele muchísimo no haber podido darte un último abrazo, acariciarte o mirarte a los ojos una última vez.</p>
+
+<p>El abuelo te sostuvo en sus brazos mientras lloraba. Sé que te quería muchísimo y que hizo lo que creyó que era mejor para que no siguieras sufriendo.</p>
+
+<p>Hay una imagen que siempre llevaré conmigo: imaginar aquel último vistazo tuyo, antes de cerrar tus ojitos para siempre.</p>
+
+<p>Me gusta imaginar que, en ese último instante, todos tus recuerdos pasaron por tu mente a la vez. Aquellos campos enormes por los que corrías, nuestras tardes jugando con piedras y palos, nuestros baños en el río, las veces que nos tumbábamos en la hierba y todas aquellas noches en las que dormíamos casi juntos.</p>
+
+<p>Me gusta imaginar que también recordaste a todos los que formaron parte de tu vida: al abuelo, a la abuela, a mi madre, a mi padrastro, a mi padre, a mi hermano, a los demás perros y a mí.</p>
+
+<p>Quizá no fue así, nunca podré saberlo, pero necesito imaginar que en aquel último instante había algo de toda la vida que compartimos.</p>
+
+<p>Y mientras el abuelo te sostenía en sus brazos y lloraba desconsoladamente, yo habría querido estar allí. Habría querido acariciarte, mirarte y darte las gracias una última vez.</p>
+
+<p>Ojalá hubiera podido acompañarte. Ojalá hubiera podido ser parte de ese último momento y que mi última imagen contigo no fuera la de una despedida que ni siquiera pude vivir.</p>
+
+<p>Cuando te durmieron, ya no había vuelta atrás. Me rompe el corazón pensar que cerraste tus ojitos y que no volvería a verte entrar por la puerta.</p>
+
+<p>Pero también quiero darte las gracias.</p>
+
+<p>Gracias por haber sido parte de mi infancia, por protegerme, por jugar conmigo y por enseñarme tantas cosas.</p>
+
+<p>Me alegro de haber formado parte de tu historia, Byron. Y tú siempre formarás parte de la mía.</p>
+
+<p>No puedo vivir sin echarte de menos. Han pasado dos años y todavía me duele muchísimo. No quiero olvidarte ni perder los recuerdos que todavía conservo.</p>
+
+<p>Quiero que sepas que te he querido más que a nada en toda mi vida. Has sido de lo mejor que he vivido.</p>
+
+<p>Byron, quiero que sepas que fui un tonto por no dejar el móvil, por no ir más veces a verte y por no hacerte todo el caso que merecías cuando estabas llegando al final de tu vida.</p>
+
+<p>Ojalá pudiera volver atrás y cambiarlo. Me arrepiento muchísimo y daría cualquier cosa por tener otra oportunidad contigo.</p>
+
+<p>Pero quiero hacerte una promesa:</p>
+
+<p>Si existe una segunda vida, si existe la reencarnación o simplemente existe el cielo, iré a buscarte el primero. No pienso dejar que nos separe nada. Quiero encontrarte, abrazarte y pasar contigo el resto de la eternidad.</p>
+
+<p>Esta vez no dejaré pasar ni un segundo. Esta vez disfrutaré de cada momento contigo.</p>
+
+<p>Espero, con todo mi corazón, que algún día exista la posibilidad de volver a encontrarnos. Que podamos estar juntos otra vez, jugar, correr, conocer lugares nuevos y recuperar todos esos momentos que nos quedaron pendientes.</p>
+
+<p>Porque no quiero que nada nos separe. Ni el tiempo, ni la distancia, ni la muerte.</p>
+
+<p>Te quiero, Byron. Te querré siempre.</p>
+
+<p>Perdóname por no haber estado aquel último día. Y gracias por haber estado conmigo durante tantos años.</p>
+
+<p class="signature">
+Con todo mi corazón,<br><br>
+Tu compañero de toda la vida. ❤️🐾
+</p>
+
+</article>
+
+<div class="footer">Siempre juntos, Byron. ❤️</div>
+
+<script>
+/*
+  AÑADE AQUÍ LOS NÚMEROS DE TUS FOTOGRAFÍAS.
+  Cada número busca fotos/NUMERO.jpg
+*/
+const fotografias = [1, 2, 3, 4, 5, 6];
+
+const album = document.getElementById("album");
+
+fotografias.forEach(numero => {
+  const marco = document.createElement("div");
+  marco.className = "frame";
+
+  const imagen = document.createElement("img");
+  imagen.src = `fotos/${numero}.jpg`;
+  imagen.alt = `Recuerdo de Byron número ${numero}`;
+
+  imagen.onerror = () => {
+    imagen.alt = `Añade fotos/${numero}.jpg`;
+    imagen.style.opacity = "0.15";
+  };
+
+  const etiqueta = document.createElement("div");
+  etiqueta.className = "frame-number";
+  etiqueta.textContent = `RECUERDO Nº ${numero}`;
+
+  marco.appendChild(imagen);
+  marco.appendChild(etiqueta);
+  album.appendChild(marco);
+});
+</script>
+
+</body>
+</html>
